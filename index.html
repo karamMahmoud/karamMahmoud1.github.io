@@ -15,8 +15,20 @@
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
 
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/5c3b2f5e494cc76b7872d4aa/default';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </head>
-
 <body>
 
 <div class="super_container">
@@ -82,9 +94,9 @@
 							<div class="header_search_content">
 								<div class="header_search_form_container">
 									<form action="#" class="header_search_form clearfix">
-										<input type="search" required="required" class="header_search_input" placeholder="Search for products...">
+										<input type="search" required="required" class="header_search_input" placeholder="البحث عن منتجات">
 										<div class="custom_dropdown">
-											<div class="custom_dropdown_list">
+											<div class="custom_dropdown_list txt-right">
 												<span class="custom_dropdown_placeholder clc">جميع المنتجات</span>
 												<i class="fas fa-chevron-down"></i>
 												<ul class="custom_list clc">
@@ -154,8 +166,10 @@
 									<li><a href="#">كمبيوترات و لابتوبات <i class="fas fa-chevron-right ml-auto"></i></a></li>
 									<li><a href="#">كاميرات و صور<i class="fas fa-chevron-right"></i></a></li>
 									<li class="hassubs">
-										<a href="#">قطع غيار<i class="fas fa-chevron-right"></i></a>
-										<ul>
+										<a href="#">قطع غيار
+											<!-- <i class="fas fa-chevron-left"></i> -->
+										</a>
+										<!-- <ul>
 											<li class="hassubs">
 												<a href="#">Menu Item<i class="fas fa-chevron-right"></i></a>
 												<ul>
@@ -168,7 +182,7 @@
 											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
 											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
 											<li><a href="#">Menu Item<i class="fas fa-chevron-right"></i></a></li>
-										</ul>
+										</ul> -->
 									</li>
 									<li><a href="#">تليفونات و تابلت<i class="fas fa-chevron-right"></i></a></li>
 									<li><a href="#">تليفزيونات<i class="fas fa-chevron-right"></i></a></li>
@@ -183,8 +197,8 @@
 
 							<div class="main_nav_menu ml-auto">
 								<ul class="standard_dropdown main_nav_dropdown">
-									<li><a href="#">Home<i class="fas fa-chevron-down"></i></a></li>
-									<li class="hassubs">
+									<li><a href="#">الرئيسية<i class="fas fa-chevron-down"></i></a></li>
+									<!-- <li class="hassubs">
 										<a href="#">Super Deals<i class="fas fa-chevron-down"></i></a>
 										<ul>
 											<li>
@@ -229,7 +243,7 @@
 										</ul>
 									</li>
 									<li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
-									<li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
+									<li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li> -->
 								</ul>
 							</div>
 
@@ -340,17 +354,17 @@
 
 	<!-- Banner -->
 
-	<div class="banner">
+	<div class="banner" style="direction:ltr">
 		<div class="banner_background" style="background-image:url(images/banner_background.jpg)"></div>
 		<div class="container fill_height">
 			<div class="row fill_height">
 				<div class="banner_product_image"><img src="images/banner_product.png" alt=""></div>
-				<div class="col-lg-5 offset-lg-4 fill_height">
+				<div class="col-lg-5 fill_height">
 					<div class="banner_content">
-						<h1 class="banner_text">new era of smartphones</h1>
-						<div class="banner_price"><span>$530</span>$460</div>
+						<h1 class="banner_text">الاسطورة</h1>
+						<div class="banner_price"><span>$530</span>50 بلبل</div>
 						<div class="banner_product_name">Apple Iphone 6s</div>
-						<div class="button banner_button"><a href="#">Shop Now</a></div>
+						<div class="button banner_button"><a href="#">إشترى</a></div>
 					</div>
 				</div>
 			</div>
@@ -424,7 +438,7 @@
 					<!-- Deals -->
 
 					<div class="deals">
-						<div class="deals_title">Deals of the Week</div>
+						<div class="deals_title">العروض</div>
 						<div class="deals_slider_container">
 
 							<!-- Deals Slider -->
@@ -577,9 +591,9 @@
 						<div class="tabbed_container">
 							<div class="tabs">
 								<ul class="clearfix">
-									<li class="active">Featured</li>
-									<li>On Sale</li>
-									<li>Best Rated</li>
+									<li class="active">جديد</li>
+									<!-- <li>On Sale</li>
+									<li>Best Rated</li> -->
 								</ul>
 								<div class="tabs_line"><span></span></div>
 							</div>
@@ -602,7 +616,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -627,7 +641,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button active">Add to Cart</button>
+													<!-- <button class="product_cart_button active">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -652,7 +666,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -677,7 +691,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -702,7 +716,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -727,7 +741,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -752,7 +766,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -777,7 +791,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -802,7 +816,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -827,7 +841,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -852,7 +866,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -877,7 +891,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -902,7 +916,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -927,7 +941,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -952,7 +966,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -977,7 +991,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1011,7 +1025,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1036,7 +1050,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button active">Add to Cart</button>
+													<!-- <button class="product_cart_button active">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1061,7 +1075,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1086,7 +1100,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1111,7 +1125,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1136,7 +1150,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1161,7 +1175,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1186,7 +1200,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1211,7 +1225,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1236,7 +1250,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1261,7 +1275,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1286,7 +1300,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1311,7 +1325,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1336,7 +1350,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1361,7 +1375,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1386,7 +1400,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1420,7 +1434,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1445,7 +1459,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button active">Add to Cart</button>
+													<!-- <button class="product_cart_button active">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1470,7 +1484,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1495,7 +1509,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1520,7 +1534,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1545,7 +1559,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1570,7 +1584,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1595,7 +1609,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1620,7 +1634,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1645,7 +1659,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1670,7 +1684,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1695,7 +1709,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1720,7 +1734,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1745,7 +1759,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1770,7 +1784,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1795,7 +1809,7 @@
 														<input type="radio" name="product_color" style="background:#000000">
 														<input type="radio" name="product_color" style="background:#999999">
 													</div>
-													<button class="product_cart_button">Add to Cart</button>
+													<!-- <button class="product_cart_button">Add to Cart</button> -->
 												</div>
 											</div>
 											<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -1876,7 +1890,7 @@
 				</div>
 				<div class="col-lg-3">
 					<div class="popular_categories_content">
-						<div class="popular_categories_title">Popular Categories</div>
+						<div class="popular_categories_title">الاصناف</div>
 						<div class="popular_categories_slider_nav">
 							<div class="popular_categories_prev popular_categories_nav"><i class="fas fa-angle-left ml-auto"></i></div>
 							<div class="popular_categories_next popular_categories_nav"><i class="fas fa-angle-right ml-auto"></i></div>
@@ -1934,7 +1948,7 @@
 										<div class="banner_2_title">MacBook Air 13</div>
 										<div class="banner_2_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum laoreet.</div>
 										<div class="rating_r rating_r_4 banner_2_rating"><i></i><i></i><i></i><i></i><i></i></div>
-										<div class="button banner_2_button"><a href="#">Explore</a></div>
+										<div class="button banner_2_button"><a href="#">المزيد</a></div>
 									</div>
 
 								</div>
@@ -2014,7 +2028,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2039,7 +2053,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button active">Add to Cart</button>
+														<!-- <button class="product_cart_button active">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2064,7 +2078,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2089,7 +2103,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2114,7 +2128,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2139,7 +2153,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2164,7 +2178,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2189,7 +2203,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2214,7 +2228,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2239,7 +2253,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2264,7 +2278,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2289,7 +2303,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2314,7 +2328,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2339,7 +2353,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2364,7 +2378,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2389,7 +2403,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2421,7 +2435,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2446,7 +2460,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button active">Add to Cart</button>
+														<!-- <button class="product_cart_button active">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2471,7 +2485,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2496,7 +2510,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2521,7 +2535,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2546,7 +2560,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2571,7 +2585,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2596,7 +2610,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2621,7 +2635,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2646,7 +2660,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2671,7 +2685,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2696,7 +2710,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2721,7 +2735,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2746,7 +2760,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2771,7 +2785,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2796,7 +2810,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2828,7 +2842,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2853,7 +2867,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button active">Add to Cart</button>
+														<!-- <button class="product_cart_button active">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2878,7 +2892,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2903,7 +2917,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2928,7 +2942,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2953,7 +2967,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -2978,7 +2992,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -3003,7 +3017,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -3028,7 +3042,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -3053,7 +3067,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -3078,7 +3092,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -3103,7 +3117,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -3128,7 +3142,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -3153,7 +3167,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -3178,7 +3192,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -3203,7 +3217,7 @@
 															<input type="radio" name="product_color" style="background:#000000">
 															<input type="radio" name="product_color" style="background:#999999">
 														</div>
-														<button class="product_cart_button">Add to Cart</button>
+														<!-- <button class="product_cart_button">Add to Cart</button> -->
 													</div>
 												</div>
 												<div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -3230,7 +3244,7 @@
 												<div class="arrivals_single_price text-right">$379</div>
 											</div>
 											<div class="rating_r rating_r_4 arrivals_single_rating"><i></i><i></i><i></i><i></i><i></i></div>
-											<form action="#"><button class="arrivals_single_button">Add to Cart</button></form>
+											<!-- <form action="#"><button class="arrivals_single_button">Add to Cart</button></form> -->
 										</div>
 										<div class="arrivals_single_fav product_fav active"><i class="fas fa-heart"></i></div>
 										<ul class="arrivals_single_marks product_marks">
@@ -3251,7 +3265,7 @@
 	<!-- Best Sellers -->
 
 	<div class="best_sellers">
-		<div class="container">
+		<div class="container" style="direction:ltr">
 			<div class="row">
 				<div class="col">
 					<div class="tabbed_container">
@@ -4149,7 +4163,7 @@
 	<!-- Reviews -->
 
 	<div class="reviews">
-		<div class="container">
+		<div class="container" style="direction:ltr">
 			<div class="row">
 				<div class="col">
 
@@ -4263,8 +4277,8 @@
 
 	<!-- Recently Viewed -->
 
-	<div class="viewed">
-		<div class="container">
+	<div class="viewed" style="direction:ltr">
+		<div class="container" style="direction:ltr">
 			<div class="row">
 				<div class="col">
 					<div class="viewed_title_container">
@@ -4379,7 +4393,7 @@
 
 	<!-- Brands -->
 
-	<div class="brands">
+	<div class="brands"  style="direction:ltr">
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -4424,7 +4438,7 @@
 						</div>
 						<div class="newsletter_content clearfix">
 							<form action="#" class="newsletter_form">
-								<input type="email" class="newsletter_input" required="required" placeholder="Enter your email address">
+								<input type="email" class="newsletter_input" required="required" placeholder="ادخل ايميلك">
 								<button class="newsletter_button">Subscribe</button>
 							</form>
 							<div class="newsletter_unsubscribe_link"><a href="#">unsubscribe</a></div>
@@ -4549,6 +4563,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="plugins/slick-1.8.0/slick.js"></script>
 <script src="plugins/easing/easing.js"></script>
 <script src="js/custom.js"></script>
+
 </body>
 
 </html>

@@ -255,7 +255,7 @@ $(document).ready(function()
 			dealsSlider.owlCarousel(
 			{
 				items:1,
-				loop:false,
+				loop:true,
 				navClass:['deals_slider_prev', 'deals_slider_next'],
 				nav:false,
 				dots:false,

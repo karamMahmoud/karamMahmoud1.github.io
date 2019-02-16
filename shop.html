@@ -437,7 +437,8 @@
 							<!-- Product Item -->
 							<div class="product_item is_new" v-for="item in items">
 								<div class="product_border"></div>
-								<div class="product_image d-flex flex-column align-items-center justify-content-center"><img src="images/new_5.jpg" alt=""></div>
+								<div class="product_image d-flex flex-column align-items-center justify-content-center">
+									<img :src="item.photo" alt=""></div>
 								<div class="product_content">
 									<div class="product_price">${{item.offerPrice}}<span>{{item.price}}</span></div>
 									<div class="product_name"><div><a href="#" tabindex="0">{{item.productName}}</a></div></div>
@@ -773,16 +774,42 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 new Vue({
   el: '#aapp',
   data: {
-    items: []
+    items: [],
+    item: {}
 	  },
 	mounted(){
-		console.log("ss");
 		var vm=this;
 		axios
-		.get('http://localhost:3000/answer')
+		.get('http://localhost:8080/api/products/')
 		.then(response => {
-		vm.items=response.data.data;
+			var items=response.data.data;
+		for(let i=0;i<items.length;i++){
+		axios.get(`http://localhost:8080/api/products/${items[i].productId}/photo`, {
+				headers: {
+					'Content-Type': 'multipart/form-data',
+					'X-Requested-With': 'XMLHttpRequest',
+					'Content-Type': 'application/json'
+				}
+			}
+		).then(data => {
+			if(data.data.data.length>0)
+			vm.item.photo=data.data.data[0];
+			else {
+				vm.item.photo="";
+
+			}
+
+			vm.item.productName=response.data.data[i].productName;
+			vm.item.quantity=response.data.data[i].quantity;
+			vm.item.productDescription=response.data.data[i].productDescription;
+			vm.item.price=response.data.data[i].price;
+			vm.item.offerPrice=response.data.data[i].offerPrice;
+			vm.$set(vm.items, i, vm.item);
+		}).catch(function (error) {
 		})
+	}
+	})
+
 }
 })
 </script>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" style="direction:rtl">
+<head>
+<title>جملة</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="El Captain shop project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<!--Start of Tawk.to Script-->
+<style>
+.col-xs-6{
+  float:right;
+}
+.mr-t15{
+  margin-top:15px;
+}
+</style>
+</head>
+<body style="direction:rtl">
+  <div class="container" id="admin">
+  <div  class="row mr-t15">
+  <div class="col-xs-6">
+    <input v-model="product.code" type="text" placeholder="كود"/>
+  </div>
+</div>
+  <div class="row mr-t15">
+    <div class="col-xs-6">
+      <input v-model="product.offerPrice" type="text" placeholder="الخصم"/>
+    </div>
+  </div>
+  <div class="row mr-t15">
+    <div class="col-xs-6">
+      <input v-model="product.price" type="text" placeholder="السعر"/>
+    </div>
+  </div>
+  <div class="row mr-t15">
+    <div class="col-xs-6">
+      <textarea v-model="product.productDescription" type="text" placeholder="وصف المنتج">
+      </textarea>
+    </div>
+  </div>
+  <div class="row mr-t15">
+    <div class="col-xs-6">
+      <input v-model="product.productName" type="text" placeholder="إسم المنتج"/>
+    </div>
+  </div>
+  <div class="row mr-t15">
+    <div class="col-xs-6">
+      <input v-model="product.quantity" type="number" placeholder="الكمية"/>
+    </div>
+  </div>
+  <div class="row mr-t15">
+    <div class="col-xs-6">
+      <button class="btn-success" @click="addProduct">
+        حفظ
+      </button>
+    </div>
+  </div>
+  <div class="col-md-12">
+      <div class="form-group">
+<label>صورة</label>
+<input type="file" id="file" accept=".jpg, .png" ref="file" class="form-control" v-on:change="handleFilesUpload()"/>
+</div>
+                  </div>
+</div>
+
+</body>
+<script src="js/axios.js"></script>
+<script src="js/vuejs.js"></script>
+<script>
+new Vue({
+  el: '#admin',
+  data: {
+    product:{
+      code:'',
+      offerPrice:null,
+      price:null,
+      productDescription:'',
+      productName:'',
+      quantity:null,
+    }
+  },
+
+// 	mounted(){
+// 		axios
+// 		.get('http://localhost:3000/answer')
+// 		.then(response => {
+// 			console.log(response)
+// }
+// );
+// 	}
+
+methods:{
+  addProduct(){
+    axios.post('http://localhost:8080/api/products/',
+			this.product, {
+				headers: {
+					'Content-Type': 'multipart/form-data',
+          'X-Requested-With': 'XMLHttpRequest',
+          'Content-Type': 'application/json'
+				}
+			}
+		).then(data => {
+		}).catch(function (error) {
+		})
+  },
+  handleFilesUpload(){
+    let formData = new FormData();
+    console.log(this.$refs.file.files[0]);
+    let uploadedFile = this.$refs.file.files[0];
+    formData.append("photo",uploadedFile)
+      axios.post('http://localhost:8080/api/products/1/photo',
+  			formData, {
+  				headers: {
+  					'Content-Type': 'application/x-www-form-urlencoded',
+            'X-Requested-With': 'XMLHttpRequest',
+            'Content-Type': 'application/json'
+  				}
+  			}
+  		).then(data => {
+  		}).catch(function (error) {
+  		})
+  },
+}
+})
+</script>
+</html>
